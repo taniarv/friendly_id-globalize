@@ -5,9 +5,10 @@ Gem::Specification.new do |s|
   s.name          = 'friendly_id-globalize'
   s.version       = FriendlyId::Globalize::VERSION
   s.authors       = ['Norman Clarke', 'Philip Arndt']
-  s.email         = ['norman@njclarke.com', 'p@arndt.io']
-  s.homepage      = 'http://github.com/norman/friendly_id-globalize'
-  s.summary       = 'Globalize support for FriendlyId.'
+  s.collaborators = ['Tania Rubio']
+  s.email         = ['norman@njclarke.com', 'p@arndt.io', 'taniarubiov@gmail.com']
+  s.homepage      = 'http://github.com/taniarv/friendly_id-globalize'
+  s.summary       = 'Globalize support for FriendlyId. Fixes spree_product friendly_id for spree_core~>4.4'
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test}/*`.split("\n")
   s.require_paths = ['lib']

@@ -131,7 +131,9 @@ method.
       if friendly_id_config.uses?(:scoped)
         relation = relation.where(:scope => serialized_scope)
       end
-      relation.delete_all
+      # taniarv
+      # fix for spree_core 4.4.0
+      relation.delete_all if relation.present?
       slugs.create! do |record|
         record.slug = friendly_id
         record.locale = locale
