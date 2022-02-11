@@ -4,8 +4,7 @@ require File.expand_path('../lib/friendly_id/globalize/version', __FILE__)
 Gem::Specification.new do |s|
   s.name          = 'friendly_id-globalize'
   s.version       = FriendlyId::Globalize::VERSION
-  s.authors       = ['Norman Clarke', 'Philip Arndt']
-  s.collaborators = ['Tania Rubio']
+  s.authors       = ['Norman Clarke', 'Philip Arndt', 'Tania Rubio']
   s.email         = ['norman@njclarke.com', 'p@arndt.io', 'taniarubiov@gmail.com']
   s.homepage      = 'http://github.com/taniarv/friendly_id-globalize'
   s.summary       = 'Globalize support for FriendlyId. Fixes spree_product friendly_id for spree_core~>4.4'
