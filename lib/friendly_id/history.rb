@@ -133,7 +133,11 @@ method.
       end
       # taniarv
       # fix for spree_core 4.4.0
-      relation.delete_all if relation.present?
+      begin
+        relation.delete_all if relation.present?
+      rescue => e
+        logger.info "Rescue from ERROR in friendly_id-globalize: #{e.inspect}"
+      end
       slugs.create! do |record|
         record.slug = friendly_id
         record.locale = locale
